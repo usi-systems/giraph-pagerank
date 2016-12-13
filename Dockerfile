@@ -29,5 +29,8 @@ ADD tiny-graph.txt $GIRAPH_PREFIX/tiny-graph.txt
 ADD giraph-bootstrap.sh /etc/giraph-bootstrap.sh
 RUN chown root:root /etc/giraph-bootstrap.sh && chmod 700 /etc/giraph-bootstrap.sh
 
+# add our pagerank example
+ADD pagerank $GIRAPH_PREFIX/pagerank
+
 # default command
 CMD ["/etc/giraph-bootstrap.sh", "-d"]

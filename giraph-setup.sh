@@ -21,5 +21,5 @@ curl -L# 'http://grappa.cs.washington.edu/files/giraph-1.1.0-bc9f823e23d110d3c54
 ln -s $PREFIX/giraph-1.1.0-HEAD $PREFIX/giraph
 
 echo Installing Zookeeper....
-curl -L# 'http://apache.claz.org/zookeeper/current/zookeeper-3.4.6.tar.gz' | tar -xz -C $PREFIX
+curl -L# 'http://mirror.switch.ch/mirror/apache/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz' | tar -xz -C $PREFIX
 ln -s $PREFIX/zookeeper-3.4.6 $PREFIX/zookeeper
