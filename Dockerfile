@@ -31,6 +31,7 @@ RUN chown root:root /etc/giraph-bootstrap.sh && chmod 700 /etc/giraph-bootstrap.
 
 # add our pagerank example
 ADD pagerank $GIRAPH_PREFIX/pagerank
+ADD exercise_pagerank $GIRAPH_PREFIX/exercise_pagerank
 
 # default command
 CMD ["/etc/giraph-bootstrap.sh", "-d"]
