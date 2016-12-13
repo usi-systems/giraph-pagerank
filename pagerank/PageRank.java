@@ -1,4 +1,6 @@
-// Source: http://buttercola.blogspot.ch/2015/04/giraph-page-rank.html
+// Sources:
+// http://buttercola.blogspot.ch/2015/04/giraph-page-rank.html
+// https://www.safaribooksonline.com/blog/2014/02/12/understanding-apache-giraph-application/
 
 import org.apache.giraph.graph.BasicComputation;
 import org.apache.giraph.conf.LongConfOption;
@@ -36,6 +38,8 @@ public class PageRank extends BasicComputation<
         sendMessage(edge.getTargetVertexId(), message);
       }
     }
-    vertex.voteToHalt();
+    else {
+      vertex.voteToHalt();
+    }
   }  
 }
