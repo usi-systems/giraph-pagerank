@@ -1,10 +1,13 @@
 Build docker image (run in parent dir with Dockerfile):
 
+    cd giraph-pagerank
     docker build -t giraph-docker .
 
-Start container, mounting `$HOME` on `/myhome` in container:
+Start the container:
 
     docker run --volume $HOME:/myhome --rm --interactive --tty giraph-docker /etc/giraph-bootstrap.sh -bash
+
+The following commands should all be run inside the container.
 
 Compile our PageRank example:
 
